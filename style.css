@@ -1,0 +1,126 @@
+.attribution {font-size: 11px; text-align: center; color: var(--white); position: absolute; top: 0; left: 0;}
+.attribution a {color: #3e52a3;}
+:root {
+    /* Colors */
+    --blue500: #8bacda;
+    --cyan400: #00fff7;
+    --blue950: #0d192b;
+    --blue900: #14253d;
+    --blue800: #2f415b;
+    --white: #ffffff;
+
+    /* Font weights*/
+    --f-weight-300: 300;
+    --f-weight-400: 400;
+    --f-weight-600: 600;
+}
+/* Useful classes */
+.d-flex {
+    display: flex;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.just-space-bet {
+    justify-content: space-between;
+}
+.gap-05 {
+    gap: 0.5rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.mar-0 {
+    margin: 0;
+}
+.color-white {
+    color: var(--white);
+}
+.color-cyan400 {
+    color: var(--cyan400);
+}
+.color-blue800 {
+    color: var(--blue800);
+}
+.color-blue500 {
+    color: var(--blue500);
+}
+.font-s-18 {
+    font-size: 1.13rem;
+}
+.font-w-600 {
+    font-weight: var(--f-weight-600);
+}
+.font-w-300 {
+    font-weight: var(--f-weight-300);
+}
+/* ------------------------- */
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--blue950);
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: var(--cyan400);
+}
+.card {
+    background-color: var(--blue900);
+    width: 18rem;
+    height: max-content;
+    border-radius: 20px;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.eye {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.back-ava {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.ava {
+    width: 90%;
+    height: auto;
+}
+.image-box {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.image-box:hover .eye {
+    display: block;
+}
+.image-box:hover {
+    background-color: rgba(0, 255, 247, 0.5);
+}
+.image-box:hover .main-image {
+    z-index: -1;
+}
+.person-info {
+    border-top: 1px solid var(--blue800);
+    align-items: center;
+    padding: 1rem 0;
+}
